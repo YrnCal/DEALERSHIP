@@ -1,6 +1,8 @@
-export const cars = [
+import { CarType } from "~/routes/Inventory";
+
+export const cars: CarType[] = [
   {
-    id: 1,
+    _id: 1,
     model: "Mazda CX-5",
     image:
       "https://media.ed.edmunds-media.com/mazda/cx-5/2025/oem/2025_mazda_cx-5_4dr-suv_25-carbon-turbo_fq_oem_1_1280.jpg",
@@ -10,33 +12,63 @@ export const cars = [
     fuelType: "petrol",
     mileage: "68000 km ",
     yom: 2021,
+    // view details part
+    engine: "SKYACTIV-G 2.5-liter, four-cylinder naturally aspirated",
+    transmission: "6-speed automatic transmission with manual shift mode",
+    color: "gray",
+    condition: "Used- excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://gld-creative.s3.us-west-2.amazonaws.com/2025-mazda-cx-5-25-carbon-turbo-45a9a42a8f37-600x300.png",
+      "https://assets.autoweek.nl/m/inzy4oibuo6p_800.jpg",
+    ],
   },
   {
-    id: 2,
+    _id: 2,
     model: "Mercedes Benz S550",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuulznKrXCSBkfdqKldWCvZTHPVjo79Ondg&s",
-    price: "$70000",
+    price: "KSH 34M",
     description:
       " The Mercedes Benz S550 is a  flagship luxury sedan that epitomizes elegance, cutting-edge technology, and exceptional comfort.",
     fuelType: "petrol",
     mileage: "10000 km ",
     yom: 2015,
+    // view details part
+    engine: "Twin-turbocharged 4.7-liter V8",
+    transmission: "7-speed automatic",
+    color: "Black",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://hips.hearstapps.com/hmg-prod/images/2022-mercedes-benz-s500-4matic-123-1642184026.jpg?crop=0.458xw:0.387xh;0.316xw,0.418xh&resize=2048:*",
+      "https://static01.nyt.com/images/2014/06/22/automobiles/WHEEL1/WHEEL1-superJumbo.jpg",
+    ],
   },
   {
-    id: 3,
+    _id: 3,
     model: "VW Touareg",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2018_Volkswagen_Touareg_V6_R-Line_TDi_Automatic_3.0_Front.jpg/640px-2018_Volkswagen_Touareg_V6_R-Line_TDi_Automatic_3.0_Front.jpg",
-    price: "$70000",
+    price: "KSH 7.2M  ",
     description:
       " The VW Touareg is a  midsize luxury SUV with a focus on comfort, advanced technology, and strong performance.",
     fuelType: "petrol",
     mileage: "64000 km ",
     yom: 2018,
+    // view details part
+    engine: "3.6L V6 engine",
+    transmission: "8-speed Automatic transmission",
+    color: "black",
+    condition: "Used- excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9nzdl-i4WDoU9YYqnsgVbQ0CfOw1IfiX0qr_6HECeezCNLm9gK1LYVQdanu0sMpZFNE&usqp=CAU",
+      "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg__marking_background__sm_/v1/editorial/2024-Volkswagen-Touareg-210TDI-Elegance-SUV-Grey-GS-1200x800-%2810%29.jpg",
+    ],
   },
   {
-    id: 4,
+    _id: 4,
     model: "Nissan Patrol Y62",
     image: "https://i.ytimg.com/vi/pGe1PSETGWU/maxresdefault.jpg",
     price: "KSH 22 M",
@@ -45,9 +77,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "2500 km ",
     yom: 2022,
+    // view details part
+    engine: "5.6L Naturally Aspirated V8",
+    transmission: "7-speed Automatic transmission",
+    color: "Black",
+    condition: "New, low mileage",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.nissankenya.com/media/w5ydtuah/get-inside-gallery-017.jpg?anchor=center&mode=crop&width=950&height=520&rnd=133070206125970000",
+      "https://www.nissankenya.com/media/cgmagipu/02_patrol-y62-2022_interior_class-leading-interior-space.jpg?anchor=center&mode=crop&width=950&height=520&rnd=133099564389070000",
+    ],
   },
   {
-    id: 5,
+    _id: 5,
     model: "BMW M5",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYXn3bKVlRkbOtGBGDtMxOK4emC9RDZ6nU6g&s",
@@ -57,9 +99,20 @@ export const cars = [
     fuelType: "petrol",
     mileage: "1667 km ",
     yom: 2020,
+    // view details part
+    engine: "4.4-liter twin-turbocharged V8 petrol engine",
+    transmission: "A hybrid system mated to an 8-speed automatic tranmission",
+    color: "black",
+    condition: "Used - excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://bringatrailer.com/wp-content/uploads/2023/08/2020_bmw_m5-competition_dsc_9408-1-60874.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbCwDEdFS4pAq0PwUnalCFAFCasfPjdCJIQ&s",
+    ],
   },
+
   {
-    id: 6,
+    _id: 6,
     model: "Toyota RAV4",
     image:
       "https://hips.hearstapps.com/hmg-prod/images/2025-toyota-rav4-101-6707e09a230c3.jpg?crop=0.946xw:0.883xh;0,0.117xh&resize=2048:*",
@@ -69,9 +122,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "17000 km ",
     yom: 2021,
+    // view details part
+    engine: " 2.5-liter four-cylinder engine",
+    transmission: "Eight-speed automatic transmission",
+    color: "Navy-blue",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIG5TKFJu_L6LTMlcmON24ExtTHSi-nwFbnY0o7JwcdfhYb4iszTddLYT5AqHbe1hGxM&usqp=CAU",
+      "https://vehicle-images.dealerinspire.com/ddc5-110008857/2T3C1RFV0MW111697/19ec1a92d1e21fa604d09de5ad2e1812.jpg",
+    ],
   },
   {
-    id: 7,
+    _id: 7,
     model: "Toyota Fortuner",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/6/66/2015_Toyota_Fortuner_%28New_Zealand%29.jpg",
@@ -81,21 +144,43 @@ export const cars = [
     fuelType: "diesel",
     mileage: "24850 km ",
     yom: 2019,
+    // view details part
+    engine:
+      "2.4L, 4-cylinder, in-line, 16-valve DOHC intercooler VNT diesel engine",
+    transmission:
+      " 4-cylinder, in-line, 16-valve DOHC intercooler VNT diesel engine",
+    color: "White",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.cloud.zimauto.co.zw/assets/images/vehicles/autotrader/car-details/22394_l9phhas1dv.jpg",
+      "https://imgd.aeplcdn.com/600x337/cw/ec/39370/2019-Toyota-Fortuner-154156.jpg?wm=1&q=75",
+    ],
   },
   {
-    id: 8,
+    _id: 8,
     model: "Suzuki Escudo",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOt6J6vPUA-xZl1WCAGrYp01kGDRy45z1HA&s",
+      "https://www.japanautosale.com/Admin/uploads/cars_images/images_800x600/JAS-2585_1_160_1572499488.jpg",
     price: "KSH 1.2M",
     description:
       " The Suzuki Escudo is a  compact SUV known for its rugged design, off-road capabilities, and affordability.",
     fuelType: "petrol",
     mileage: "115000 km ",
     yom: 2012,
+    // view details part
+    engine: "2.4L J24B Engine",
+    transmission: "Automatic",
+    color: "Black",
+    condition: "Used - good condition",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhhQKOdd-UC-1Ycfd4Guh_R0SC-ZJ4D08IQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHx2PwjGlNlGMgAEzQbbNNuCfyXG7nZVkr0g&s",
+    ],
   },
   {
-    id: 9,
+    _id: 9,
     model: "Nissan Altima",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV8qQKOKOVukXMPWJGeWAPuY4tdBSIRCX9OQ&s",
@@ -105,9 +190,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "22000 km ",
     yom: 2021,
+    // view details part
+    engine: "2.5-liter four-cylinder engine",
+    transmission: "CVT Transmission",
+    color: "White",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://di-uploads-pod29.dealerinspire.com/woodhousenissan/uploads/2021/04/2021-Nissan-Altima-Interior.jpeg",
+      "https://vehicle-images.dealerinspire.com/6747-110008195/1N4BL4CV9MN306482/c71ecd15ec890b2d04789155b553b07c.jpg",
+    ],
   },
   {
-    id: 10,
+    _id: 10,
     model: "VW Golf TSI",
     image:
       "https://www.topgear.com/sites/default/files/cars-road-test/image/2015/02/Large%20Image%20%28optional%29_522.jpg",
@@ -117,9 +212,19 @@ export const cars = [
     fuelType: "diesel",
     mileage: "44000 km ",
     yom: 2020,
+    // view details part
+    engine: "2.0-liter TDI diesel engine",
+    transmission: "8-speed automatic transmission",
+    color: "Navy-blue",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.driving.co.uk/wp-content/uploads/sites/5/2019/12/golf-18.jpg",
+      "https://www.cnet.com/a/img/resize/379aa4ec3320ab92267d92391b254773103f20a6/hub/2020/05/18/bafc7190-543f-4fe3-a829-9ac507a7b7d9/2020-volkswagen-golf-tsi-ogi1.jpg?auto=webp&fit=crop&height=675&width=1200",
+    ],
   },
   {
-    id: 11,
+    _id: 11,
     model: "Nissan Skyline",
     image:
       "https://www.motortrend.com/uploads/2023/08/2024-Nissan-Skyline-NISMO-static-rear-side.png",
@@ -129,21 +234,42 @@ export const cars = [
     fuelType: "petrol",
     mileage: "58960 km ",
     yom: 2019,
+    // view details part
+    engine: "3.5-liter V6 petrol engine (VQ35HR) with an electric motor",
+    transmission: "7-speed automatic transmission",
+    color: "Gunmetal blue",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://japanesenostalgiccar.com/wordpress/wp-content/uploads/2023/08/NissanSkylineV37NISMO-45.jpg",
+      "https://carsales.pxcrush.net/carsales/cars/dealer/8sn1tlpdcoityidps4t6m1vkn.jpg?pxc_method=fitfill&pxc_bgtype=self&pxc_size=720,480",
+    ],
   },
 
   {
-    id: 12,
+    _id: 12,
     model: "Toyota Land Cruiser 100 Series",
-    price: "KSH 2.7M",
-    image: "https://wallpapercave.com/wp/wp12332425.jpg",
+    price: "KSH 2M",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMgZsZdbJTh8xToTVLZLJWDinOdUGq5W-I_Q&s",
     description:
       " The Toyota Land Cruiser 100 Series is a full-size, luxury SUV known for its exceptional off-road capability, durability, and comfort",
     fuelType: "diesel",
     mileage: "150000 km ",
-    yom: 2010,
+    yom: 2007,
+    // view details part
+    engine: " 4.2-liter inline-6 diesel engine (1HD-FTE)",
+    transmission: " 5-speed automatic transmission",
+    color: "Black",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.houseofcars.co.ke/hoc-images/2024/10/WhatsApp-Image-2024-10-26-at-11.13.17-876x535.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4hPpZxgNu3zoGn9dmT7SaoPzcwyroDgYSqQ&s",
+    ],
   },
   {
-    id: 13,
+    _id: 13,
     model: "Mercedes-Benz C-180",
     price: "KSH 2.7M",
     image:
@@ -153,9 +279,19 @@ export const cars = [
     fuelType: "diesel",
     mileage: "79000 km ",
     yom: 2016,
+    // view details part
+    engine: "1.6L turbocharged 4-cylinder engine",
+    transmission: " 6-speed automatic transmission (6G-Tronic Plus)",
+    color: "Gray",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.houseofcars.co.ke/hoc-images/2024/04/WhatsApp-Image-2024-04-19-at-15.03.18-876x535.jpeg",
+      "https://media.ed.edmunds-media.com/mercedes-benz/c-class/2016/oem/2016_mercedes-benz_c-class_sedan_c300-4matic_fq_oem_2_815.jpg",
+    ],
   },
   {
-    id: 14,
+    _id: 14,
     model: "Ford Mustang GT",
     price: "KSH 8M",
     image:
@@ -165,9 +301,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "58720 km ",
     yom: 2018,
+    // view details part
+    engine: " 5.0-liter Coyote V8 engine",
+    transmission: "6-speed manual gearbox",
+    color: "Navy-blue",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://i0.wp.com/practicalmotoring.com.au/wp-content/uploads/2018/10/Ford-Mustang-GT-201812.jpg?ssl=1",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiK1I8UmTXLje0K3j4WICqVAqmXsyhnDzv8A&s",
+    ],
   },
   {
-    id: 15,
+    _id: 15,
     model: "Mitsubishi Pajero Sport",
     price: "KSH 5.5M",
     image:
@@ -177,21 +323,42 @@ export const cars = [
     fuelType: "diesel",
     mileage: "75000 km ",
     yom: 2020,
+    // view details part
+    engine: " 2.4-liter 4N15 MIVEC VGT turbocharged diesel engine",
+    transmission:
+      "8-speed automatic transmission with Intelligent Shift Control",
+    color: "Black",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTar7x7ygFeMg2cP6omFEy2_axOCYzliQXTjA&s",
+      "https://carsales.pxcrush.net/carsales/car/dealer/f22c18b6e3fabcbc749cfefd3e96d790.jpg?pxc_method=fitfill&pxc_bgtype=self&pxc_size=720,480",
+    ],
   },
   {
-    id: 16,
-    model: "BMW X5",
+    _id: 16,
+    model: "BMW X5 M Competition",
     price: "KSH 7.5M",
     image:
-      "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x5-m60i-102-6602d48787fb7.jpg?crop=0.790xw:0.591xh;0.103xw,0.214xh&resize=1200:*",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghmnob2ofTTmxzvuTKNZeXgTqS1GedOoWSA&s",
     description:
-      " The BMW X5 is a luxury mid-size SUV that blends sporty performance with premium comfort and cutting-edge technology.",
+      " The BMW X5M Competition is a luxury mid-size SUV that blends sporty performance with premium comfort and cutting-edge technology.",
     fuelType: "petrol",
     mileage: "89560 km ",
     yom: 2019,
+    // view details part
+    engine: " 4.4-liter M TwinPower Turbo V8 engine",
+    transmission: "8-speed M Steptronic automatic transmission with Drivelogic",
+    color: "Black",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.dmarge.com/wp-content/uploads/2019/01/bmw-x5-3.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5aac1f6a5cfd796d520a4a7a/1732620791665-UGPV8YFHARFFMB57RVP7/BMW+X5-13.jpg",
+    ],
   },
   {
-    id: 17,
+    _id: 17,
     model: "Honda Accord",
     price: "KSH 2.2M",
     image:
@@ -201,9 +368,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "42350 km ",
     yom: 2022,
+    // view details part
+    engine: "2.0L 4-Cylinder Engine",
+    transmission: "10-speed automatic transmission",
+    color: "Gunmetal-blue",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.motortrend.com/uploads/2021/12/2022-honda-accord-sport-2-0t-15.jpg",
+      "https://carsguide-res.cloudinary.com/image/upload/c_fit,h_480,w_853,f_auto,t_cg_base/v1/editorial/2025-Honda-Accord-eHEV-RS-GS-1200x800-(11).jpg",
+    ],
   },
   {
-    id: 18,
+    _id: 18,
     model: "Chevrolet Camaro",
     price: "KSH 7.2M",
     image:
@@ -213,9 +390,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "76890 km ",
     yom: 2017,
+    // view details part
+    engine: "3.6L V6 engine",
+    transmission: "6-speed manual transmission",
+    color: "White",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC4mk_U6Or-5I1rBI6nAhw_Jqw6tK22Rnmg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgmQiD6Sf1w7-oJXV7gNzr8YyH8DBBcMeiA&s",
+    ],
   },
   {
-    id: 19,
+    _id: 19,
     model: "Audi A4",
     price: "KSH 4.4M",
     image:
@@ -225,9 +412,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "96230 km ",
     yom: 2019,
+    // view details part
+    engine: "2.0-liter turbocharged four-cylinder engine",
+    transmission: "7-speed dual-clutch automatic transmission",
+    color: "Red",
+    condition: "Locally used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9V_R9tZAPzbZ_3e0YoqdYwOfnVv8fmXARaQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdWr49VLYzSlPBh0D78hsQS-ZlYXv1i0LusFsFN4FZwiISs_M5EuqOECpnf646DiMfDfk&usqp=CAU",
+    ],
   },
   {
-    id: 20,
+    _id: 20,
     model: "Nissan GTR R35",
     price: "KSH 22M",
     image:
@@ -237,10 +434,20 @@ export const cars = [
     fuelType: "petrol",
     mileage: "56000 km ",
     yom: 2020,
+    // view details part
+    engine: "Twin-turbocharged 3.8-liter V6 engine (VR38DETT)",
+    transmission: "twin-turbocharged 3.8-liter V6 engine (VR38DETT)",
+    color: "Black",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlb6kvf0HueaWerUxQx-MM003v5p6UfRh6pA&s",
+      "https://ph-classic-prod-images.s3.amazonaws.com/nimg/43404/3.jpg",
+    ],
   },
   {
-    id: 21,
-    model: "Porsche 911",
+    _id: 21,
+    model: "Porsche 911 Turbo S",
     price: "KSH 35M",
     image:
       "https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7Zl2dioCLafQDcFGDTMYnfurnN65yPewFb2CvNzxUGqA7fQrmeOJUPYDImTB8VuyY0oVk0DBRl2vzpQNqjdtAsvyJ5I",
@@ -249,9 +456,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "12350 km ",
     yom: 2021,
+    // view details part
+    engine: "3.8-liter, twin-turbocharged flat-six",
+    transmission: "8-speed PDK (Porsche Doppelkupplung) dual-clutch automatic",
+    color: "white",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5hHvFsQIEkgeKrmX1vWdLa2GLM7ICTZR5nw&s",
+      "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/xvrqs1ublwgpmirkjkjq",
+    ],
   },
   {
-    id: 22,
+    _id: 22,
     model: "Lexus RX 350",
     price: "KSH 7.5M",
     image:
@@ -261,9 +478,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "34570 km ",
     yom: 2022,
+    // view details part
+    engine: "3.5-liter V6 engine",
+    transmission: "8-speed automatic transmission",
+    color: "Gray",
+    condition: "Used - Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://www.lexus.com.my/content/dam/lexus-v3-malaysia/model/suv/rx-2023/rx500h/new/02.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJY2gXw9jlssfXkEYu9SfdFv7jABu7NET7Q&s",
+    ],
   },
   {
-    id: 23,
+    _id: 23,
     model: "Subaru Outback",
     price: "KSH 6M",
     image:
@@ -273,9 +500,19 @@ export const cars = [
     fuelType: "petrol",
     mileage: "12780 km ",
     yom: 2022,
+    // view details part
+    engine: "2.5-liter naturally aspirated FB25D engine",
+    transmission: "8-Speed CVT",
+    color: "Navy-Blue",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://media.ed.edmunds-media.com/subaru/outback/2022/oem/2022_subaru_outback_4dr-suv_limited_rq_oem_2_815.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5tdFPWyoN1pkloxwlFZnGvTF5-FBb8SLZbQ&s",
+    ],
   },
   {
-    id: 24,
+    _id: 24,
     model: "Jeep Wrangler",
     price: "KSH 8M",
     image:
@@ -285,17 +522,38 @@ export const cars = [
     fuelType: "petrol",
     mileage: "47820 km ",
     yom: 2019,
+    // view details part
+    engine: "3.6L Pentastar V6 engine",
+    transmission: "6-speed manual gearbox",
+    color: "Jungle-green",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://hips.hearstapps.com/autoweek/assets/s3fs-public/jp016_027wrpasca5cm65adcnd00pmjphkbru.jpg?resize=980:*",
+      "https://i0.wp.com/practicalmotoring.com.au/wp-content/uploads/2019/05/2019-Jeep-Wrangler-Review14.jpg?ssl=1",
+    ],
   },
   {
-    id: 25,
-    model: "Isuzu DMAX",
+    _id: 25,
+    model: "Isuzu DMAX Double Cabin",
     image:
-      "https://carinsurance.arrivealive.co.za/wp-content/uploads/2500DSCF1189_R.jpg",
+      "https://eu.amcdn.co.za/cars/isuzu-d-max-double-cab-d-max-3-0-ddi-lse-n-r-4x4-a-t-d-c-p-u-2023-id-80369455-type-main.jpg?width=800",
     price: "KSH 4M",
     description:
-      ": The Isuzu D-Max Single Cab is a rugged and practical pickup truck designed for heavy-duty work and utility.",
-    fuelType: "petrol",
+      ": The Isuzu D-Max Double Cab is a rugged and practical pickup truck designed for heavy-duty work and utility.",
+    fuelType: "diesel",
     mileage: "45700 km ",
     yom: 2023,
+    // view details part
+    engine: "3.0L 4JJ3-TCX Diesel Engine",
+    transmission: "6-speed manual transmission",
+    color: "Gray",
+    condition: "Excellent",
+    location: "Nairobi",
+    additionalImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArh-KnG7HYm93cnfxtVps26_fwklhwDhYMQ&s",
+      "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/qlbns3ael8b1eflwmdxf",
+    ],
   },
 ];
+export type { CarType };

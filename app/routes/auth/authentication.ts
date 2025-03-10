@@ -20,12 +20,11 @@ export const action: ActionFunction = async ({ request }) => {
   return json({ user: data.user });
 };
 
-// Load user session
 export const loader: LoaderFunction = async () => {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  return json({ user: user || null }); // Ensure `user` is never undefined
+  return json({ user: user || null }); // user is never an undefined
 };
 
 export default function Authentication() {
